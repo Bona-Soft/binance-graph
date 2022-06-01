@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Version>0.0.0</Version>
+    <Description>Common classes for unit and integration testing.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Moq" Version="4.14.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zenfolio.Common.API\Zenfolio.Common.API.csproj" />
+    <ProjectReference Include="..\Zenfolio.Common.EntityFramework.PostgreSql\Zenfolio.Common.EntityFramework.PostgreSql.csproj" />
+    <ProjectReference Include="..\Zenfolio.Common.EntityFramework\Zenfolio.Common.EntityFramework.csproj" />
+    <ProjectReference Include="..\Zenfolio.Common.GenericHostBuilder\Zenfolio.Common.GenericHostBuilder.csproj" />
+    <ProjectReference Include="..\Zenfolio.Common.HttpClient\Zenfolio.Common.HttpClient.csproj" />
+    <ProjectReference Include="..\Zenfolio.Common.Messaging\Zenfolio.Common.Messaging.csproj" />
+  </ItemGroup>
+
+</Project>
